@@ -515,7 +515,13 @@ void ILI9341_setTextSize(uint8_t s) {
 void ILI9341_setTextColor(uint16_t c) {
   // For 'transparent' background, we'll set the bg
   // to the same as fg instead of using a flag
-  _textColor = _textBgColor = c;
+  _textColor = c;
+}
+
+void ILI9341_setTextBgColor(uint16_t c) {
+  // For 'transparent' background, we'll set the bg
+  // to the same as fg instead of using a flag
+  _textBgColor = c;
 }
 
 void ILI9341_setTextWrap(bool w) {

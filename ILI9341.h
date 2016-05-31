@@ -103,6 +103,7 @@ void ILI9341_drawTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_
 void ILI9341_fillTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color);
 void ILI9341_setTextSize(uint8_t s);
 void ILI9341_setTextColor(uint16_t c);
+void ILI9341_setTextBgColor(uint16_t c);
 void ILI9341_setTextWrap(bool w);
 void ILI9341_setCursor(int16_t x, int16_t y);
 uint16_t ILI9341_getCursorX(void);
